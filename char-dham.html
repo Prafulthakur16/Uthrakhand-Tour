@@ -1,0 +1,75 @@
+<!-- Char Dham Page (same structure) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Char Dham - Online Uttarakhand</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">OnlineUttarakhand</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="char-dham.html" class="active">Char Dham</a></li>
+        <li><a href="tour-packages.html">Tour Packages</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1609082676605-9225d5d7d89e');">
+    <div class="hero-content">
+      <h1>The Sacred Char Dham Yatra</h1>
+      <p>Yamunotri, Gangotri, Kedarnath, and Badrinath</p>
+    </div>
+  </section>
+
+  <section class="packages">
+    <h2>Char Dham Sites</h2>
+    <div class="package-grid">
+      <div class="package-card">
+        <img src="https://via.placeholder.com/300x200" alt="Yamunotri">
+        <h3>Yamunotri</h3>
+        <p>Source of River Yamuna</p>
+      </div>
+      <div class="package-card">
+        <img src="gen.jpg" alt="Gangotri">
+        <h3>Gangotri</h3>
+        <p>Birthplace of River Ganga</p>
+      </div>
+      <div class="package-card">
+        <img src="ked.jpg" alt="Kedarnath">
+        <h3>Kedarnath</h3>
+        <p>Majestic Shiva Temple in Himalayas</p>
+      </div>
+      <div class="package-card">
+        <img src="img12.jpg" alt="Badrinath">
+        <h3>Badrinath</h3>
+        <p>Abode of Lord Vishnu</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 OnlineUttarakhand.com. All Rights Reserved.</p>
+  </footer>
+
+  <button id="scrollTopBtn" onclick="scrollToTop()">↑</button>
+
+  <script>
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+    window.onscroll = () => {
+      scrollTopBtn.style.display = (document.documentElement.scrollTop > 300) ? "block" : "none";
+    };
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
+

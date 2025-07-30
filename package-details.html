@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Auli Snow Tour - Online Uttarakhand</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    header, footer {
+      background-color: #1e3d59;
+      color: white;
+      padding: 15px 30px;
+    }
+    .hero-detail {
+      background-image: url('img11.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 100px 30px;
+      color: white;
+      text-align: center;
+    }
+    .hero-detail h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    .package-detail {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .package-detail img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .package-detail h2 {
+      margin-top: 20px;
+      color: #1e3d59;
+    }
+    .package-detail p {
+      line-height: 1.6;
+    }
+    .btn-book {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #ff6e40;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .btn-book:hover {
+      background-color: #ff3d00;
+    }
+    #scrollTopBtn {
+      display: none;
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #ff6e40;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">OnlineUttarakhand</div>
+  </header>
+
+  <section class="hero-detail">
+    <h1>Auli Snow Tour</h1>
+    <p>4 Days / 3 Nights | Adventure & Scenic Views</p>
+  </section>
+
+  <section class="package-detail">
+    <img src="img11.jpg" alt="Auli Snow Tour">
+    <h2>Tour Overview</h2>
+    <p>Experience the breathtaking beauty of Auli, one of India’s premier ski destinations. Nestled in the Himalayas, Auli offers panoramic views, exciting adventures, and a peaceful escape into nature.</p>
+
+    <h2>Inclusions</h2>
+    <ul>
+      <li>Accommodation in 3-star hotel</li>
+      <li>Breakfast and Dinner</li>
+      <li>Sightseeing in Auli and Joshimath</li>
+      <li>Pickup & Drop from Dehradun</li>
+    </ul>
+
+    <h2>Itinerary</h2>
+    <p><strong>Day 1:</strong> Arrival at Dehradun, transfer to Auli<br>
+    <strong>Day 2:</strong> Local sightseeing and skiing<br>
+    <strong>Day 3:</strong> Cable car ride and visit to Joshimath<br>
+    <strong>Day 4:</strong> Return to Dehradun</p>
+
+    <a href="contact.html" class="btn-book">Book Now</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 OnlineUttarakhand.com. All Rights Reserved.</p>
+  </footer>
+
+  <button id="scrollTopBtn" onclick="scrollToTop()">↑</button>
+
+  <script>
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+    window.onscroll = () => {
+      scrollTopBtn.style.display = (document.documentElement.scrollTop > 300) ? "block" : "none";
+    };
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>

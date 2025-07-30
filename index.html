@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Online Uttarakhand</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  background: url('img1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+    header {
+      background-color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #2c3e50;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+    .nav-links li a {
+      text-decoration: none;
+      color: #2c3e50;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .nav-links li a:hover,
+    .nav-links li a.active {
+      background-color: #3498db;
+      color: white;
+      transform: scale(1.05);
+    }
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url('https://images.unsplash.com/photo-1619100874565-eec3ad1e49b6') no-repeat center center/cover;
+      padding: 6rem 2rem;
+      color: white;
+      text-align: center;
+    }
+    .hero-content {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 2rem;
+      border-radius: 15px;
+      display: inline-block;
+      max-width: 600px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: #e67e22;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    .btn:hover {
+      background-color: #d35400;
+      transform: scale(1.05);
+    }
+    .packages {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .packages h2 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+    .package-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .package-card {
+      background-color: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .package-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .package-card h3 {
+      font-size: 1.5rem;
+      margin: 1rem 0 0.5rem;
+    }
+    .package-card p {
+      margin-bottom: 1rem;
+      color: #555;
+    }
+    .package-card .btn {
+      margin-bottom: 1rem;
+    }
+    .package-card:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+    #scrollTopBtn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 0.75rem 1rem;
+      font-size: 1.2rem;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: background-color 0.3s ease;
+    }
+    #scrollTopBtn:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">OnlineUttarakhand</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="char-dham.html">Char Dham</a></li>
+        <li><a href="tour-packages.html">Tour Packages</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Explore the Beauty of Uttarakhand</h1>
+      <p>Discover top destinations, tour packages, and adventures</p>
+      <a href="tour-packages.html" class="btn">Explore Now</a>
+    </div>
+  </section>
+
+  <section class="packages">
+    <h2>Popular Tour Packages</h2>
+    <div class="package-grid">
+      <div class="package-card">
+        <img src="img11.jpg" alt="Auli Tour">
+        <h3>Auli Snow Tour</h3>
+        <p>4 Days / 3 Nights</p>
+        <a href="tour-packages.html" class="btn">View Details</a>
+      </div>
+      <div class="package-card">
+        <img src="img12.jpg" alt="Char Dham">
+        <h3>Char Dham Yatra</h3>
+        <p>10 Days / 9 Nights</p>
+        <a href="char-dham.html" class="btn">View Details</a>
+      </div>
+      <div class="package-card">
+        <img src="img13.jpg" alt="Corbett Tour">
+        <h3>Jim Corbett Safari</h3>
+        <p>3 Days / 2 Nights</p>
+        <a href="tour-packages.html" class="btn">View Details</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 OnlineUttarakhand.com. All Rights Reserved.</p>
+  </footer>
+
+  <button id="scrollTopBtn" onclick="scrollToTop()">↑</button>
+
+  <script>
+    // Scroll to top button
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+    window.onscroll = () => {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        scrollTopBtn.style.display = "block";
+      } else {
+        scrollTopBtn.style.display = "none";
+      }
+    };
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>

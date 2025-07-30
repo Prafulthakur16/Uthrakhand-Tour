@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tour Packages - Online Uttarakhand</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">OnlineUttarakhand</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="char-dham.html">Char Dham</a></li>
+        <li><a href="tour-packages.html" class="active">Tour Packages</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" style="background-image: url('');">
+    <div class="hero-content">
+      <h1>Tailored Tour Packages</h1>
+      <p>Choose the perfect Uttarakhand experience for your adventure</p>
+    </div>
+  </section>
+
+  <section class="packages">
+    <h2>Our Tour Packages</h2>
+    <div class="package-grid">
+      <div class="package-card">
+        <img src="img11.jpg" alt="Auli Tour">
+        <h3>Auli Snow Tour</h3>
+        <p>4 Days / 3 Nights</p>
+        <a href="package-details.html" class="btn">View Details</a>
+      </div>
+      <div class="package-card">
+        <img src="img12.jpg" alt="Char Dham Yatra">
+        <h3>Char Dham Yatra</h3>
+        <p>10 Days / 9 Nights</p>
+        <a href="package-details.html" class="btn">View Details</a>
+      </div>
+      <div class="package-card">
+        <img src="img13.jpg" alt="Corbett Tour">
+        <h3>Jim Corbett Safari</h3>
+        <p>3 Days / 2 Nights</p>
+        <a href="package-details.html" class="btn">View Details</a>
+      </div>
+      <div class="package-card">
+        <img src="img21.jpg" alt="Nainital Package">
+        <h3>Nainital Weekend</h3>
+        <p>2 Days / 1 Night</p>
+        <a href="package-details.html" class="btn">View Details</a>
+      </div>
+      <div class="package-card">
+        <img src="img23.jpg" alt="Haridwar Rishikesh">
+        <h3>Haridwar & Rishikesh</h3>
+        <p>3 Days / 2 Nights</p>
+        <a href="package-details.html" class="btn">View Details</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 OnlineUttarakhand.com. All Rights Reserved.</p>
+  </footer>
+
+  <button id="scrollTopBtn" onclick="scrollToTop()">↑</button>
+
+  <script>
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+    window.onscroll = () => {
+      scrollTopBtn.style.display = (document.documentElement.scrollTop > 300) ? "block" : "none";
+    };
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
